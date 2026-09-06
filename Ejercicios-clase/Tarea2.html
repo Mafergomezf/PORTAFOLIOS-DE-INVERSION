@@ -7542,6 +7542,24 @@ Carlos Hasan Hernández Rohan</p>
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6675f142">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Selecci%C3%B3n-de-activos">Selección de activos<a class="anchor-link" href="#Selecci%C3%B3n-de-activos">¶</a></h2><p>Se seleccionaron los activos BDRY, FXY, WEAT y XLP.</p>
+<ul>
+<li>BDRY representa fletes marítimos.</li>
+<li>FXY representa el yen japonés.</li>
+<li>WEAT representa el mercado del trigo.</li>
+<li>XLP representa empresas de consumo básico.</li>
+</ul>
+<p>Se escogieron porque pertenecen a mercados distintos, lo que ayuda a que el portafolio tenga una mejor diversificación.</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=1320d092">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -8364,8 +8382,9 @@ dtype: float64</pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Conclusi%C3%B3n-sobre-la-matriz-de-correlaci%C3%B3n-y-el-riesgo-no-sistem%C3%A1tico">Conclusión sobre la matriz de correlación y el riesgo no sistemático<a class="anchor-link" href="#Conclusi%C3%B3n-sobre-la-matriz-de-correlaci%C3%B3n-y-el-riesgo-no-sistem%C3%A1tico">¶</a></h3><p>Lo primero que nos llamó la atención de la matriz es que practicamente todas las correlaciones quedaron muy cercanas a 0, entonces los cuatro activos casi no se movieron de la misma manera durante el periodo que analizamos. Por ejemplo BDRY y XLP tuvieron una correlación de solamente 0.0053 y FXY con XLP de -0.0011, incluso la correlación mas alta de toda la matriz fue FXY con WEAT y fue de apenas 0.0399, entonces realmente sigue siendo bastante baja.</p>
-<p>Creo que esto tiene sentido por los activos que escogimos porque aunque todos forman parte del mismo portafolio, cada uno depende de cosas muy diferentes. BDRY esta relacionado con los fletes marítimos, FXY con el yen japonés, WEAT con el trigo y XLP con empresas de consumo básico. Entonces si por ejemplo pasa algo que afecte especificamente al mercado del trigo no necesariamente tendría que afectar de la misma forma al yen o a las empresas de consumo básico.</p>
-<p>En cuanto al riesgo individual, BDRY fue el activo con mayor varianza y FXY el de menor, mientras que WEAT y XLP quedaron en medio. Esto no quiere decir que el riesgo de BDRY desaparezca al meterlo al portafolio, mas bien al combinarlo con activos que casi no estan correlacionados con el podemos disminuir el efecto que puede tener su riesgo especifico sobre todo el portafolio. Por eso creemos que en este caso si se logra reducir bastante el riesgo no sistemático por medio de la diversificación.</p>
+<p>Esto tiene sentido por los activos que escogimos porque aunque todos forman parte del mismo portafolio, cada uno depende de cosas muy diferentes. BDRY esta relacionado con los fletes marítimos, FXY con el yen japonés, WEAT con el trigo y XLP con empresas de consumo básico. Entonces si por ejemplo pasa algo que afecte especificamente al mercado del trigo no necesariamente tendría que afectar de la misma forma al yen o a las empresas de consumo básico.</p>
+<p>En cuanto al riesgo no sistemático, cada activo tambien tiene riesgos propios. BDRY puede verse afectado por cambios en los fletes marítimos y en la demanda de transporte, FXY por movimientos propios del yen japonés, WEAT por factores como la producción de trigo, el clima o cambios en la oferta agrícola y XLP por problemas específicos de las empresas del sector de consumo básico. En nuestros resultados BDRY fue el activo con mayor varianza y FXY el de menor, mientras que WEAT y XLP quedaron en medio.</p>
+<p>Esto no quiere decir que el riesgo especifico de cada activo desaparezca al meterlo al portafolio, mas bien al combinarlos con activos que casi no estan correlacionados entre si se puede disminuir el efecto que tendría un problema de uno solo sobre todo el portafolio. Por eso creemos que en este caso la diversificación si ayuda bastante a reducir el riesgo no sistemático, porque los riesgos vienen de fuentes diferentes y los movimientos de los cuatro activos casi no se repiten.</p>
 </div>
 </div>
 </div>
